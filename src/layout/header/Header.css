@@ -1,0 +1,80 @@
+.login-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2001;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.login-bar a {
+    color: #fff;
+    margin-left: 16px;
+}
+
+header {
+    top: 33px;
+}
+
+.notification-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5000;
+    background: #acc35b;
+    display: block;
+    color: #fff;
+}
+
+.notification-bar p {
+    margin: 18px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.notification-bar a {
+    color: #fff;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+.notification-bar.notification {
+    background: #048ba8;
+}
+
+.notification-bar.alert {
+    background: #dd1c1a;
+}
+
+.notification-close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.notification-close::before,
+.notification-close::after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+}
+
+.notification-close::after {
+    transform: rotate(-45deg);
+}
